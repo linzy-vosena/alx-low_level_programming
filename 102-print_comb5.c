@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - prints all the possible combinations of two-digit number
+ * main - prints all possible combinations of two-digit number
  *
  * return: 0 when successful
  */
+
 int main(void)
 {
 	int i, j;
+
 	for (i = 0 ; i < 100 ; i++)
 	{
 		for (j = 0 ; j < 100 ; j++)
