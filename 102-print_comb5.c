@@ -1,18 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of two two-digit numbers
+ * main - prints all the possible combinations of two-digit number
  *
- * Return: 0 when successful
+ * return: 0 when successful
  */
-
 int main(void)
 {
 	int i, j;
-
 	for (i = 0 ; i < 100 ; i++)
-	{	
-		for (j = 0 ; j <100 ; j++)
+	{
+		for (j = 0 ; j < 100 ; j++)
 		{
 			if (i < j)
 			{
@@ -22,12 +20,11 @@ int main(void)
 				putchar((j / 10) + 48);
 				putchar((j % 10) + 48);
 				if (i != 98 || j != 99)
-				{	
+				{
 					putchar(',');
 					putchar(' ');
 				}
-			
-			}			
+			}
 		}
 	}
 	putchar('\n');
