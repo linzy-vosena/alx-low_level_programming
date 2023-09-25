@@ -1,5 +1,4 @@
 #include "lists.h"
-#include "stdlib.h"
 #include "stdio.h"
 
 /**
@@ -19,5 +18,5 @@ size_t print_listint(const listint_t *h)
 		num++;
 	}
 
-	return (num);
+	return num;
 }
