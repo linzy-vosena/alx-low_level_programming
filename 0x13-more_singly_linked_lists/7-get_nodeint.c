@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * get_nodeint_at_index - returns the node at a certain index in a listint_t list
