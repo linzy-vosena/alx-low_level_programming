@@ -2,9 +2,9 @@
 #include "lists.h"
 /**
  * print_listint - prints all the elements of a linked list
- * @h: head of pointer to the list
+ * @h: head of pointer to the linked list
  *
- * Return: number of nodes
+ * Return: number of nodes in the list
  */
 size_t print_listint(const listint_t *h)
 {
