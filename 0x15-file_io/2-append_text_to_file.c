@@ -5,8 +5,8 @@
 * @filename: pointer to the name of the file.
 * @text_content: The string to add to the end of the file.
 *
-* Return: 1 when successful,If the function fails or filename is NULL - 1.
-*         If the file does not exist the user lacks write permissions - 1
+* Return: 1 when successful,If the function fails or filename is NULL - - 1
+*         If the file does not exist and the user lacks write permissions - - 1
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
@@ -23,11 +23,11 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	o = open(filename, O_WRONLY | O_APPEND);
 	w = write(o, text_content, len);
-	
+
 	if (o == -1 || w == -1)
 		return (-1);
-	
+
 	close(o);
-	
+
 	return (1);
 }
